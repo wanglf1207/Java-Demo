@@ -1,0 +1,38 @@
+package com.cn.demo.io.characterstream;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+/**
+ * 通过FileReader和FileWriter实现文件的复制功能，本例中，是将当前类文件的内容复制到一个新的文件中
+ * 如果新文件E:E:/Study/JavaEE/workspace/Java-Demo/file/NewCoppyFileTest.newfile
+ * 不存在，程序运行时会报出FileNotFoundException
+ * @author wanglf1207
+ * @since 2010年4月
+ */
+public class CoppyFileTest {
+	
+	public static void main(String[] args) {
+		
+		FileReader fileReader = null;
+		FileWriter fileWriter = null;
+		int b = 0;
+		
+		try {
+			fileReader = new FileReader("E:/Study/JavaEE/workspace/Java-Demo/src/com/cn/demo/io/characterstream/CoppyFileTest.java");
+			fileWriter = new FileWriter("E:/Study/JavaEE/workspace/Java-Demo/src/com/cn/demo/io/characterstream/CoppyFileTest.newfile");
+			while((b=fileReader.read()) != -1) {
+				fileWriter.write(b);
+				b++;
+			}
+			fileReader.close();
+			fileWriter.close();
+		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("复制完毕");
+	}
+}

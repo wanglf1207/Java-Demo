@@ -1,0 +1,53 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+*.mp3
+out
+gen
+# maven ignore
+target/
+tmp/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+*.log
+pom.xml.versionsBackup
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+*.ipr
+*.iws
+
+# temp ignore
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+# gradle output
+build/
+.gradleBuild/
+.gradle/
+gradle/
+*_.java
+
+# jacoco ignore
+jacoco.exec
+jacoco-it.exec
