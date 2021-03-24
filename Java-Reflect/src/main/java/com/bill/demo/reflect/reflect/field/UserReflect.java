@@ -1,4 +1,4 @@
-package com.demo.reflect.reflect.field;
+package com.bill.demo.reflect.reflect.field;
 
 import java.lang.reflect.Field;
 //���÷����User������nameֵ�е���ĸa�滻��b��

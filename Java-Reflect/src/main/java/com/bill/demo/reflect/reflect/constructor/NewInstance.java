@@ -1,4 +1,4 @@
-package com.demo.reflect.reflect.constructor;
+package com.bill.demo.reflect.reflect.constructor;
 /**
  * û�����������Ӱ��java�Ŀ���Ӧ�ã��ṩ�������ֻ���ṩ��һ������
  * ���� String str = (String)Class.forName(��java.lang.String��).newInstance();

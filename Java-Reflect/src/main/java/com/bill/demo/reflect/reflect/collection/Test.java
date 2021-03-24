@@ -1,4 +1,4 @@
-package com.demo.reflect.reflect.collection;
+package com.bill.demo.reflect.reflect.collection;
 
 import java.io.FileInputStream;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package com.demo.reflect.reflect.array;
+package com.bill.demo.reflect.reflect.array;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.demo.reflect.classloader;
+package com.bill.demo.reflect.classloader;
 
 public class CreateObjectInstance {
 
@@ -13,7 +13,7 @@ public class CreateObjectInstance {
 		 * 2.用Class类创建对象
 		 */
 		try {
-			Class<?> clazz = Class.forName("com.demo.reflect.classloader.User");
+			Class<?> clazz = Class.forName("com.bill.demo.reflect.classloader.User");
 			User user = (User)clazz.newInstance();
 			user.setUsername("wanglf");user.setPassword("admin");
 			System.out.println(user.toString());
@@ -30,8 +30,11 @@ public class CreateObjectInstance {
 		 */
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 		try {
-			Class<?> clazz = classLoader.loadClass("com.demo.reflect.classloader.User");
-			clazz.newInstance();
+			Class<?> clazz = classLoader.loadClass("com.bill.demo.reflect.classloader.User");
+			User user = (User) clazz.newInstance();
+			user.setUsername("bill");
+			user.setPassword("admin");
+			System.out.println(user);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (IllegalAccessException ilex) {

@@ -9,12 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>JNC</module>
-        <module>IO</module>
-        <module>Socket</module>
-        <module>NIO</module>
+        <module>Java-JNC</module>
+        <module>Java-IO</module>
+        <module>Java-Socket</module>
+        <module>Java-NIO</module>
         <module>Java-JAXB</module>
         <module>Java-HelloWorld</module>
+        <module>Java-Reflect</module>
     </modules>
 
     <properties>

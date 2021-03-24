@@ -1,4 +1,4 @@
-package com.demo.reflect.config.classloader;
+package com.bill.demo.reflect.config.classloader;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -11,7 +11,7 @@ public class ReadProperties {
         //.getResourceAsStream("com/cn/config/classloader/config.properties");
 
         //方法 2(简便方法)
-        InputStream inStream = ReadProperties.class.getResourceAsStream("resource/config.properties");
+        InputStream inStream = ReadProperties.class.getResourceAsStream("com/bill/demo/reflect/config/classloader/resource/config.properties");
         Properties properties = new Properties();
         properties.load(inStream);
         inStream.close();
