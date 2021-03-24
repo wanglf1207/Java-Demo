@@ -67,7 +67,7 @@ public class Person {
         this.area = area;
     }
 
-    /*@Override
+    @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
@@ -76,5 +76,5 @@ public class Person {
                 ", addr='" + addr + '\'' +
                 ", area='" + area + '\'' +
                 '}';
-    }*/
+    }
 }
