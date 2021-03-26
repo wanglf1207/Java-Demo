@@ -16,6 +16,7 @@
         <module>Java-JAXB</module>
         <module>Java-HelloWorld</module>
         <module>Java-Reflect</module>
+        <module>Java-Regex</module>
     </modules>
 
     <properties>
